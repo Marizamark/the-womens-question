@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Women’s Question</title>
+  <meta name="description" content="A place for women to speak plainly, think together, and ask better questions." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">The Women’s Question</a>
+    <nav aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#conversations">Conversations</a>
+      <a href="#personal">The Personal</a>
+      <a href="#gatherings">Gatherings</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">A forum for women, in public and in private.</p>
+      <h1>The question is ours now.</h1>
+      <p class="dek">A place to speak plainly about work, love, bodies, family, ambition, anger, friendship, politics, loneliness, pleasure, and everything women are still told to keep to themselves.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#conversations">Enter the conversation</a>
+        <a class="button secondary" href="#about">Why this exists</a>
+      </div>
+    </section>
+
+    <section class="manifesto" id="about">
+      <div class="section-label">01 / About</div>
+      <div class="manifesto-grid">
+        <h2>Not a women’s magazine.<br />Not a self-help corner.<br />A room with the door open.</h2>
+        <div class="manifesto-copy">
+          <p>The Women’s Question borrows its name from an old argument: what, exactly, should women be allowed to be?</p>
+          <p>We are less interested in answering that question than in changing who gets to ask it.</p>
+          <p>This is a space for candor, disagreement, curiosity, confession, criticism, solidarity, and the occasional bad opinion said out loud.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="conversation-section" id="conversations">
+      <div class="section-heading">
+        <div class="section-label">02 / Conversations</div>
+        <h2>What are we talking about?</h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="kicker">Work</span>
+          <h3>When did ambition become embarrassing?</h3>
+          <p>On wanting more, asking for more, and refusing to pretend otherwise.</p>
+        </article>
+        <article class="card">
+          <span class="kicker">Relationships</span>
+          <h3>What do women owe one another?</h3>
+          <p>Friendship, loyalty, envy, rupture, repair, and the things we rarely admit.</p>
+        </article>
+        <article class="card">
+          <span class="kicker">Culture</span>
+          <h3>Who taught us to be agreeable?</h3>
+          <p>A conversation about likability, anger, decorum, and taking up space.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="personal" id="personal">
+      <div>
+        <div class="section-label">03 / The Personal</div>
+        <h2>The things we usually say in a whisper.</h2>
+      </div>
+      <div class="personal-copy">
+        <p><strong>The Personal</strong> is the anonymous corner of The Women’s Question: confessions, dilemmas, observations, letters, and stories that are easier to tell without a name attached.</p>
+        <a class="text-link" href="mailto:hello@example.com?subject=Submission%20to%20The%20Personal">Submit something anonymously →</a>
+      </div>
+    </section>
+
+    <section class="gatherings" id="gatherings">
+      <div class="section-label">04 / Gatherings</div>
+      <div class="gatherings-grid">
+        <h2>Eventually, we leave the screen.</h2>
+        <div>
+          <p>Small dinners, reading groups, open conversations, and local meetings for women who want to talk face-to-face.</p>
+          <p class="muted">First gatherings coming soon.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow">Join the room</p>
+      <h2>Essays, questions, and gatherings—occasionally.</h2>
+      <form class="signup" onsubmit="event.preventDefault(); document.querySelector('.form-note').textContent='Beautiful. We’ll wire this up to your email platform next.';">
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" type="email" required placeholder="you@example.com" />
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="form-note" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> The Women’s Question</p>
+    <p>Made for women with something to say.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
